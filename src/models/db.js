@@ -16,7 +16,7 @@ for (const modelDefiner of modelDefiners) {
 
 associations(sequelize);
 const fn = async () => {
- //await sequelize.sync({ alter: true });
+ await sequelize.sync({ alter: true });
 };
 fn();
 module.exports = sequelize;
